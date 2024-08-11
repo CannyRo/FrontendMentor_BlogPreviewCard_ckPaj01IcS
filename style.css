@@ -95,6 +95,13 @@ body{
     font-size: 11px;
     color: hsl(228, 45%, 44%);
 }
+.card:hover > div .card__title{
+    color: var(--yellow);
+}
+.card:hover{
+    box-shadow: 16px 16px black;
+}
+
 @media (min-width: 768px) { 
     .card{
         width: 384px;
