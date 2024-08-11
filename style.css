@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+
+    --main-font: 'Figtree';
+}
+
+*{
+    font-family: var(--main-font) , 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 500;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    color: var(--gray-950);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--yellow);
+}
+.card{
+    width: 327px;
+    padding: 24px;
+    border-radius: 20px;
+    background-color: var(--white);
+    border: 1px solid black;
+    box-shadow: 8px 8px black;
+}
+.card__img{
+    width: auto;
+    height: 200px;
+    background-image: url('./assets/images/illustration-article.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.card__main_content{
+    margin: 24px 0;
+}
+.card__tag{
+    margin-bottom: 12px;
+    padding: 4px 12px;
+    width: fit-content;
+    font-size: 12px;
+    font-weight: 800;
+    border-radius: 4px;
+    background-color: var(--yellow);
+}
+.card__date{
+    font-size: 12px;
+}
+.card__title{
+    margin: 12px 0;
+    font-size: 20px;
+    font-weight: 800;
+}
+.card__resume{
+    font-size: 14px;
+    color: var(--gray-500);
+}
+.card__footer{
+    display: flex;
+    align-items: center;
+}
+.card__avatar{
+    margin-right: 12px;
+    width: 32px;
+    height: 32px;
+    background-image: url('./assets/images/image-avatar.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.card__author{
+    font-size: 14;
+    font-weight: 800;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+}
