@@ -80,7 +80,7 @@ body{
     background-size: cover;
 }
 .card__author{
-    font-size: 14;
+    font-size: 14px;
     font-weight: 800;
 }
 .footer{
@@ -94,4 +94,28 @@ body{
 .footer a {
     font-size: 11px;
     color: hsl(228, 45%, 44%);
+}
+@media (min-width: 768px) { 
+    .card{
+        width: 384px;
+    }
+    .card__tag{
+        font-size: 14px;
+    }
+    .card__date{
+        font-size: 14px;
+    }
+    .card__title{
+        font-size: 24px;
+    }
+    .card__resume{
+        font-size: 16px;
+    }
+    .footer div{
+        font-size: 14px;
+    }
+    .footer a {
+        font-size: 14px;
+        color: hsl(228, 45%, 44%);
+    }
 }
