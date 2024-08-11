@@ -95,10 +95,10 @@ body{
     font-size: 11px;
     color: hsl(228, 45%, 44%);
 }
-.card:hover > div .card__title{
+.card:hover > div .card__title, .card:active > div .card__title, .card:focus > div .card__title{
     color: var(--yellow);
 }
-.card:hover{
+.card:hover, .card:active, .card:focus{
     box-shadow: 16px 16px black;
 }
 
